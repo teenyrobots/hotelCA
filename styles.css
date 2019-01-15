@@ -17,33 +17,82 @@ body {
   padding: 0;
   background-color: black;
   color: white;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                    url('assets/hotel.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* this makes the footer stick to the bottom */
+.page {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 img {
   max-width: 100%;
 }
 
+header {
+  height: 3em;
+  background: black;
+  width: 100%;
+}
 
-.content {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  widht: 100%;
-  max-width: 1000px;
-  display: block;
-  margin: auto;
+header img {
+  display: inline-block;
+  height: 3em;
 }
 
 .neonSign {
   width: 100%;
   display: block;
   margin: auto;
+  text-align: center;
 }
 
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  color: black;
+}
+
+.tiles div {
+  background: grey;
+  margin: 1em;
+  background-position: center;
+  height: 25em;
+}
+
+.tiles .big {
+  width: 100%;
+}
+
+.tiles .small {
+  width: 30%;
+  min-width: 350px;
+}
+
+.comicContainer {
+  width: 1000px;
+  max-width: 95%;
+  display: block;
+  margin: auto;
+}
+
+/* not important, and hanging me up
 .neonSign :first-child {
 }
 
 .neonSign :last-child {
-  text-align: right;
-}
+  float: right;
+} */
 
 p {
   font-size: 2em;
@@ -53,6 +102,6 @@ footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
   text-align: center;
-  background: lightgrey;
+  background: black;
   color: white;
 }
