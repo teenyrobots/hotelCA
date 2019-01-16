@@ -1,4 +1,4 @@
-/*styles for TK project*/
+/*styles for hotel california*/
 
 * {
   box-sizing: border-box;
@@ -15,10 +15,8 @@ body {
   height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                    url('assets/hotel.jpg');
+  color: black;
+  background-image: url('assets/hotel.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -69,6 +67,7 @@ header img {
   margin: 1em;
   background-position: center;
   height: 25em;
+  border: red solid 1em;
 }
 
 .tiles .big {
