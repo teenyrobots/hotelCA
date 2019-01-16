@@ -21,6 +21,7 @@ body {
                     url('assets/hotel.jpg');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* this makes the footer stick to the bottom */
@@ -76,7 +77,7 @@ header img {
 
 .tiles .small {
   width: 30%;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .comicContainer {
