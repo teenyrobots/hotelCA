@@ -1,5 +1,7 @@
 /*styles for hotel california*/
 
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -16,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-image: url('assets/hotel.jpg');
+  background-image: url(assets/hotel.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -35,14 +38,32 @@ img {
 }
 
 header {
-  height: 3em;
   background: black;
   width: 100%;
+  border: 1em solid black;
+  border-image: url(assets/border.svg) 40 40 round;
+  border-image-outset: 1px;
+  border-collapse: collapse;
 }
 
 header img {
-  display: inline-block;
-  height: 3em;
+  display: block;
+  margin: auto;
+  opacity: .5;
+  width: 20em;
+  max-width: 90%;
+}
+
+a {
+  color: white;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.roughBorder {
+  border: 1em solid black;
+  border-image: url(assets/border.svg) 40 40 round;
+  border-image-outset: 1px;
+  border-collapse: collapse;
 }
 
 .neonSign {
@@ -67,7 +88,10 @@ header img {
   margin: 1em;
   background-position: center;
   height: 25em;
-  border: red solid 1em;
+  border: 5em solid black;
+  border-image: url(assets/border.svg) 40 40 round;
+  border-image-outset: 10px;
+  border-collapse: collapse;
 }
 
 .tiles .big {
@@ -84,6 +108,7 @@ header img {
   max-width: 95%;
   display: block;
   margin: auto;
+  padding: 2em;
 }
 
 /* not important, and hanging me up
@@ -104,4 +129,9 @@ footer {
   text-align: center;
   background: black;
   color: white;
+  font-size: .75em;
+  border: 1em solid black;
+  border-image: url(assets/border.svg) 40 40 round;
+  border-image-outset: 1px;
+  border-collapse: collapse;
 }
