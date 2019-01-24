@@ -19,6 +19,7 @@ function bgTracker() {
 }
 
 //TEMPLATED BLINKING
+//Kev suggests using 'set interval' next time instead of setTimeout
 function doABlink(blinker) {
   let lit = 'assets/'+ blinker.id+'.png';
   let unlit = 'assets/'+ blinker.id+'x.png';

@@ -23,6 +23,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Cutive Mono', monospace;
 }
 
 /* this makes the footer stick to the bottom */
@@ -45,6 +46,8 @@ header {
   border-image: url(assets/border.svg) 40 40 round;
   border-image-outset: 1px;
   border-collapse: collapse;
+  z-index: 1;
+  position: relative;
 }
 
 header img {
@@ -55,9 +58,9 @@ header img {
   max-width: 90%;
 }
 
+
 a {
   color: white;
-  font-family: 'Cutive Mono', monospace;
 }
 
 .roughBorder {
@@ -73,6 +76,26 @@ a {
   display: block;
   margin: auto;
   text-align: center;
+}
+
+
+.intro {
+  width: 950px;
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  background-color: white;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  padding: 3em 0 2em;
+  border: 1em solid black;
+  border-image: url(assets/borderWhite.svg) 40 40 round;
+  border-image-outset: 1px;
+  border-collapse: collapse;
+}
+
+.intro p {
+  margin: 1em;
 }
 
 .tiles {
@@ -110,7 +133,14 @@ a {
   max-width: 95%;
   display: block;
   margin: auto;
-  padding: 2em;
+  margin-top: 2em;
+}
+
+.button {
+  width: 200px;
+  max-width: 80%;
+  display: block;
+  margin: 6em auto;
 }
 
 /* not important, and hanging me up
@@ -127,6 +157,9 @@ p {
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
   text-align: center;
   background: black;
@@ -136,4 +169,18 @@ footer {
   border-image: url(assets/border.svg) 40 40 round;
   border-image-outset: 1px;
   border-collapse: collapse;
+}
+
+.logos {
+  max-width: 40%;
+}
+
+.logos a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.logos img {
+  width: 20px;
+  margin: 0 .5em;
 }
