@@ -6,6 +6,17 @@
   // display appropriate background image
 // reset sessions storage when user clicks final "home" link
 
+$(document).ready(function(){
+  $('.button').hover(
+    function(){
+      $(this).find('>:first-child').hide();
+      $(this).find(':nth-child(2)').show();
+    }, function(){
+      $(this).find('>:first-child').show();
+      $(this).find(':nth-child(2)').hide();
+    })
+})
+
 //state variables that must be stored
 let bgState = 1;
 
@@ -49,8 +60,32 @@ function darkIt(blinker, unlit) {
   blinker.src = unlit;
 }
 
+function peterOut(peter) {
+  let lit = 'assets/'+ peter.id+'.png';
+  let unlit = 'assets/'+ peter.id+'x.png';
+  darkIt(peter, unlit);
+  setTimeout(function() {
+    lightIt(peter, lit)
+  }, 100);
+  setTimeout(function() {
+    darkIt(peter, unlit);
+  }, 350);
+  setTimeout(function() {
+    lightIt(peter, lit)
+  }, 400);
+  setTimeout(function() {
+    darkIt(peter, unlit);
+  }, 600);
+  setTimeout(function() {
+    lightIt(peter, lit)
+  }, 800);
+  setTimeout(function() {
+    darkIt(peter, unlit);
+  }, 850);
+}
 
-//WORKS, BUT NOT TEMPLATEABLE
+
+//BLINKING FIRST PASS
 function blink(blinker) {
   let oldSrc = 'assets/'+ blinker.id;
   let blinked =  oldSrc+'x.png';

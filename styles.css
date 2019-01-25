@@ -53,7 +53,6 @@ header {
 header img {
   display: block;
   margin: auto;
-  opacity: .5;
   width: 20em;
   max-width: 90%;
 }
@@ -113,9 +112,9 @@ a {
   margin: 1em;
   background-position: center;
   height: 25em;
-  border: 5em solid black;
-  border-image: url(assets/border.svg) 40 40 round;
-  border-image-outset: 10px;
+  border: 1em solid black;
+  border-image: url(assets/borderWhite.svg) 40 40 round;
+  border-image-outset: 1px;
   border-collapse: collapse;
 }
 
@@ -134,6 +133,10 @@ a {
   display: block;
   margin: auto;
   margin-top: 2em;
+}
+
+.comicContainer img {
+  display: block;
 }
 
 .button {
