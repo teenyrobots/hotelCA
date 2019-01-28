@@ -15,10 +15,11 @@ $(document).ready(function(){
       $(this).find('>:first-child').show();
       $(this).find(':nth-child(2)').hide();
     })
-})
 
 //state variables that must be stored
-let bgState = 1;
+    let bgState = 1;
+//copy that variable to session storage
+})
 
 //functions that apply appropriate styles
 function bgTracker() {
