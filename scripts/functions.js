@@ -6,29 +6,21 @@
   // display appropriate background image
 // reset sessions storage when user clicks final "home" link
 
-$(document).ready(function(){
-  $('.button').hover(
-    function(){
-      $(this).find('>:first-child').hide();
-      $(this).find(':nth-child(2)').show();
-    }, function(){
-      $(this).find('>:first-child').show();
-      $(this).find(':nth-child(2)').hide();
-    })
-
-//state variables that must be stored
-    let bgState = 1;
-//copy that variable to session storage
-})
-
-//functions that apply appropriate styles
-function bgTracker() {
-  let theBod = document.getElementById("theBod");
-  if (bgState < 6) {
-    theBod.style.backgroundImage = "url(assets/hotel"+bgState+".jpg)";
-    bgState += 1;
-  } else {bgState = 1;}
+//STORY PROGRESSION
+function bgIncrement(){
+  let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
+  currentBg += 1;
+  sessionStorage.setItem("bgState", currentBg);
+  console.log(sessionStorage.getItem("bgState"));
+  // sessionStorage.setItem("bgState", currentBg+1);
+  // console.console.log(sessionStorage.getItem("bgState"));
 }
+
+function location(){
+  bgIncrement();
+  sessionStorage.setItem('location', 'true');
+}
+
 
 //TEMPLATED BLINKING
 //Kev suggests using 'set interval' next time instead of setTimeout
