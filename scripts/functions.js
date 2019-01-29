@@ -16,7 +16,7 @@ function bgIncrement(){
   // console.console.log(sessionStorage.getItem("bgState"));
 }
 
-function location(){
+function hotelLocation(){
   bgIncrement();
   sessionStorage.setItem('location', 'true');
 }

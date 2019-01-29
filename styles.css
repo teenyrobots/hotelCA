@@ -88,6 +88,7 @@ header img {
 
 .neonSign {
   width: 90%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   flex-direction: column;
