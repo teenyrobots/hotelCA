@@ -2,11 +2,13 @@
 
 $(document).ready(function(){
   //on load
-    let currentBg = (sessionStorage.getItem("bgState"));
-    console.log(currentBg);
-    $('#theBod').css("backgroundImage", 'url(assets/hotel'+currentBg+'.jpg')
 
-    if (sessionStorage.getItem("location")) console.log('access next three');
+    // check to see what's in sessionStorage
+    // if appropriate, then whatever
+    // if not appropriate, offer to start from beginning
+    // if they say no, then try to build storage and go from there
+
+    bgIncrement();
 
   //listeners
     $('.button').hover(

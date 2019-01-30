@@ -8,10 +8,17 @@
 
 //STORY PROGRESSION
 function bgIncrement(){
-  let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
-  currentBg += 1;
-  sessionStorage.setItem("bgState", currentBg);
-  console.log(sessionStorage.getItem("bgState"));
+
+  if (sessionStorage.getItem("bgState")) {
+    let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
+    currentBg += 1;
+    sessionStorage.setItem("bgState", currentBg);
+    console.log(sessionStorage.getItem("bgState"));
+  } else {
+    let currentBg =  1;
+    sessionStorage.setItem("bgState", currentBg);
+    console.log(sessionStorage.getItem("bgState"));
+  }
   // sessionStorage.setItem("bgState", currentBg+1);
   // console.console.log(sessionStorage.getItem("bgState"));
 }

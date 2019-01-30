@@ -18,12 +18,12 @@ $(document).ready(function(){
   setTimeout(function() {
     doABlink(document.getElementById('index1'));
     console.log('yea i am a blinker')
-  }, 1000)
+  }, 2700)
 
   setTimeout(function() {
     doABlink(document.getElementById('index2'));
     console.log('yea i am a blinker')
-  }, 300)
+  }, 2300)
 
 })
 
