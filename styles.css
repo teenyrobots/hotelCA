@@ -162,10 +162,11 @@ header img {
   background-color: grey;
   margin: 1em 0;
   background-position: center;
-  border: 1em solid black;
+  background-size: cover;
+  /* border: 1px solid black;
   border-image: url(assets/borderWhite.svg) 40 40 round;
   border-image-outset: 1px;
-  border-collapse: collapse;
+  border-collapse: collapse; */
   box-shadow: 0 5px 10px black;
 }
 
