@@ -25,6 +25,8 @@ $(document).ready(function(){
     console.log('yea i am a blinker')
   }, 2300)
 
+  //pulse(document.getElementById('enter'));
+
 })
 
 // functions

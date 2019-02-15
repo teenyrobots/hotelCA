@@ -39,9 +39,10 @@ body {
 }
 
 .flexy {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: space-around;
+  align-content: center;
 }
 
 img {
@@ -64,10 +65,6 @@ header {
   background: black;
   width: 100%;
   padding: .5em 0;
-  border: 1em solid black;
-  border-image: url(assets/border.svg) 40 40 round;
-  border-image-outset: 1px;
-  border-collapse: collapse;
   z-index: 1;
   position: relative;
 }
@@ -80,7 +77,7 @@ header img {
 }
 
 .roughBorder {
-  border: 1em solid black;
+  border: .5em solid black;
   border-image: url(assets/border.svg) 40 40 round;
   border-image-outset: 1px;
   border-collapse: collapse;
@@ -107,7 +104,6 @@ header img {
   margin-bottom: -18%;
 }
 
-
 .copy {
   width: 1000px;
   max-width: 95%;
@@ -121,24 +117,20 @@ header img {
   box-shadow: 0 5px 10px black;
 }
 
-.intro {
-  margin-top: -2em;
-  margin-bottom: 2em;
-  padding: 2.5em 0 1em;
-}
-
-.intro p {
-  margin: 1em;
-}
-
 .tiles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1000px;
   max-width: 95%;
-  margin: auto;
-  color: black;
+  margin: 1em auto;
+  color: white;
+  background-color: black;
+}
+
+.tiles p {
+  margin: 2em;
+  font-size: 1em;
 }
 
 .tiles a {
@@ -148,25 +140,25 @@ header img {
   position: relative;
 }
 
-.tiles .tileText {
-  background-color: black;
+.tileText {
+  background-color: #DF287F;
   position: absolute;
   bottom: 2em;
   left: -1px;
   width: 75%;
   border-image: none;
   box-shadow: 0 2px 5px black;
+  text-decoration: underline;
+}
+
+.tileText p {
+  margin: 1em;
 }
 
 .tiles div {
-  background-color: grey;
   margin: 1em 0;
   background-position: center;
   background-size: cover;
-  /* border: 1px solid black;
-  border-image: url(assets/borderWhite.svg) 40 40 round;
-  border-image-outset: 1px;
-  border-collapse: collapse; */
   box-shadow: 0 5px 10px black;
 }
 
@@ -178,13 +170,25 @@ header img {
   height: 30em;
 }
 
-.tiles .small {
-  width: 30%;
-  min-width: 300px;
-}
-
 .small .tileImg{
   height: 20em;
+}
+
+.unavailable {
+  opacity: .3;
+  cursor: auto;
+}
+
+.unavailable .tileText {
+  background-color: black;
+}
+
+.visited {
+  opacity: .7;
+}
+
+.visited .tileText {
+  background-color: black;
 }
 
 .comicContainer {
@@ -219,12 +223,12 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: .1em;
   text-align: center;
   background: black;
   color: white;
   font-size: .75em;
-  border: 1em solid black;
+  border: 2em solid black;
   border-image: url(assets/border.svg) 40 40 round;
   border-image-outset: 1px;
   border-collapse: collapse;
@@ -246,4 +250,21 @@ footer a {
 .logos img {
   width: 20px;
   margin: 0 .5em;
+}
+
+/* smol bois */
+@media only screen and (max-width: 750px) {
+  .tiles .small {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .big .tileImg {
+    height: 15em;
+  }
+
+  .small .tileImg{
+    height: 10em;
+  }
 }

@@ -84,6 +84,13 @@ function peterOut(peter) {
   }, 850);
 }
 
+//yeah this doesn't really work at all
+function pulse(pulser) {
+  let unlit = 'assets/' + pulser.id + '.png';
+  let lit = 'assets/' + pulser.id + 'x.png';
+  console.log(unlit);
+}
+
 
 //BLINKING FIRST PASS
 function blink(blinker) {
