@@ -13,23 +13,23 @@
       </header>
       <div class="tiles roughBorder">
         <p>Welcome to the Hotel California! With our first class amenities and unbeatable staff, we hope you'll live it up with us awhile.</p>
-        <a href="location.html"class="big visited">
+        <a href="location.html" class="big" id="locat" onclick="tileState('locat')">
           <div class="tileText"><p>our historic location</p></div>
           <div class='tileImg' style="background-image: url('assets/unvis/location.jpg')"></div>
         </a>
-        <a href="bar.html" class="small">
+        <a href="bar.html" class="small" id="bar">
           <div class="tileText"><p>fully stocked bar</p></div>
           <div class='tileImg' style="background-image: url('assets/unvis/bar.jpg')"></div>
         </a>
-        <a href="ballroom.html" class="small unavailable">
+        <a href="ballroom.html" class="small" id="ballroom">
           <div class="tileText"><p>classic ballroom</p></div>
           <div class='tileImg' style="background-image: url('assets/ballroom.jpg')"></div>
         </a>
-        <a href="pool.html" class="small unavailable">
+        <a href="pool.html" class="small" id="pool" onclick="tileState('pool')">
           <div class="tileText"><p>olympic pool</p></div>
           <div class='tileImg' style="background-image: url('assets/pool.jpg')"></div>
         </a>
-        <a href="rooms.html" class="big unavailable">
+        <a href="rooms.html" class="big" id="rooms">
           <div class="tileText"><p>our rooms</p></div>
           <div class='tileImg' style="background-image: url('assets/rooms.jpg')"></div>
         </a>
@@ -58,7 +58,7 @@
       integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
       crossorigin="anonymous">
     </script>
-    <script src="scripts/pages.js" charset="utf-8"></script>
+    <script src="scripts/site.js" charset="utf-8"></script>
     <script src="scripts/functions.js" charset="utf-8"></script>
   </body>
 </html>

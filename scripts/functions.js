@@ -1,5 +1,37 @@
 // javascript for hotel california
 
+function tileState(x) {
+  sessionStorage.setItem(x, "visited");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // open session storage
 // keep track of which tiles have been visisted
   // show appropriate tiles
