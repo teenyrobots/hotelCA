@@ -7,20 +7,13 @@ $(document).ready(function(){
   sessionStorage.setItem("bar", "unavailable");
   sessionStorage.setItem("ballroom", "unavailable");
   sessionStorage.setItem("rooms", "unavailable");
+  sessionStorage.setItem("time", "0");
+
 
   console.log(sessionStorage.getItem('locat'));
 
 
 
-
-
-
-
-
-
-  // console.log(sessionStorage.getItem("bgState"));
-  let currentBg = (sessionStorage.getItem("bgState"));
-  $('#theBod').css("backgroundImage", 'url(assets/hotel'+currentBg+'.jpg')
 
   // copy that variable to local storage
   setTimeout(function() {

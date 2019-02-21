@@ -55,11 +55,6 @@ function bgIncrement(){
   // console.console.log(sessionStorage.getItem("bgState"));
 }
 
-function hotelLocation(){
-  bgIncrement();
-  sessionStorage.setItem('location', 'true');
-}
-
 
 //TEMPLATED BLINKING
 //Kev suggests using 'set interval' next time instead of setTimeout

@@ -23,11 +23,15 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-image: url(assets/hotel1.jpg);
+  font-family: 'Cutive Mono', monospace;
+  background-color: black;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Cutive Mono', monospace;
+}
+
+#theBod {
+  background-image: url(assets/hotel1.jpg);
 }
 
 .body5 {
