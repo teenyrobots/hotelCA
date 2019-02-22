@@ -1,10 +1,10 @@
-// opening scripts for most pages
+// scripts for site.html
 
 $(document).ready(function(){
 
+  // manages tile style based on story state
   let story = [];
 
-  // gets session storage values
   updateStory();
 
   if (story[0].value == 'visited' && story[1].value == 'unavailable') {
@@ -25,6 +25,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
+  // functions
   function updateCSS(){
     let time = 1;
     for (x in story) {

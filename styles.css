@@ -34,10 +34,6 @@ body {
   background-image: url(assets/hotel1.jpg);
 }
 
-.body5 {
-  background-image: url(assets/hotel5.jpg);
-}
-
 /* this makes the footer stick to the bottom */
 .page {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -222,14 +218,6 @@ header img {
   display: block;
   margin: 3em auto;
 }
-
-/* not important, and hanging me up
-.neonSign :first-child {
-}
-
-.neonSign :last-child {
-  float: right;
-} */
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */

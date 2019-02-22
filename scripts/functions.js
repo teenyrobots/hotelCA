@@ -1,20 +1,32 @@
-// javascript for hotel california
+//functions used across site
+$(document).ready(function(){
 
+  //figures out what time it is for the comic pages
+  let time = parseInt(sessionStorage.getItem('time'));
+  console.log(time);
+  $('body').css("backgroundImage", 'url(assets/hotel'+time+'.jpg');
+
+  $('.button  img').hover(
+    function(){ this.src = 'assets/'+this.id+'x.png'; },
+    function(){ this.src = 'assets/'+this.id+'.png' }
+  )
+
+  $('.available').hover(
+    function(){
+      console.log($(this).find(':nth-child(1)'));
+      $(':nth-child(1)', this).css('backgroundColor', '#34A582');
+    },
+    function(){
+      $(':nth-child(1)', this).css('backgroundColor', '#DF287F')
+    }
+  )
+
+})
+
+//sets tile to visited when it's clicked
 function tileState(x) {
   sessionStorage.setItem(x, "visited");
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -38,22 +50,22 @@ function tileState(x) {
   // display appropriate background image
 // reset sessions storage when user clicks final "home" link
 
-//STORY PROGRESSION
-function bgIncrement(){
-
-  if (sessionStorage.getItem("bgState")) {
-    let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
-    currentBg += 1;
-    sessionStorage.setItem("bgState", currentBg);
-    console.log(sessionStorage.getItem("bgState"));
-  } else {
-    let currentBg =  1;
-    sessionStorage.setItem("bgState", currentBg);
-    console.log(sessionStorage.getItem("bgState"));
-  }
-  // sessionStorage.setItem("bgState", currentBg+1);
-  // console.console.log(sessionStorage.getItem("bgState"));
-}
+// //STORY PROGRESSION
+// function bgIncrement(){
+//
+//   if (sessionStorage.getItem("bgState")) {
+//     let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
+//     currentBg += 1;
+//     sessionStorage.setItem("bgState", currentBg);
+//     console.log(sessionStorage.getItem("bgState"));
+//   } else {
+//     let currentBg =  1;
+//     sessionStorage.setItem("bgState", currentBg);
+//     console.log(sessionStorage.getItem("bgState"));
+//   }
+//   // sessionStorage.setItem("bgState", currentBg+1);
+//   // console.console.log(sessionStorage.getItem("bgState"));
+// }
 
 
 //TEMPLATED BLINKING
@@ -79,6 +91,7 @@ function doABlink(blinker) {
   }, 900);
 }
 
+//blinking stuff
 function lightIt(blinker, lit) {
   blinker.src = lit;
 }
@@ -86,6 +99,7 @@ function lightIt(blinker, lit) {
 function darkIt(blinker, unlit) {
   blinker.src = unlit;
 }
+
 
 function peterOut(peter) {
   let lit = 'assets/'+ peter.id+'.png';
