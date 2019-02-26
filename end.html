@@ -9,8 +9,8 @@
   <body id="theBod">
     <div class="flexy page">
       <div class="neonSign">
-        <img src="assets/index1.png" alt="hotel" id='index1' onmouseover="peterOut(this)">
-        <img src="assets/index2.png" alt="california" id='index2' onmouseover="peterOut(this)">
+        <img src="assets/index1.png" alt="hotel" id='index1'>
+        <img src="assets/index2.png" alt="california" id='index2'>
       </div>
       <div class="copy">
         <p>If you enjoyed your stay, <a href="http://www.teenyrobots.net">please give us 5 stars on trip planner</a>.</p>
@@ -48,6 +48,14 @@
       crossorigin="anonymous">
     </script>
     <script src="scripts/functions.js" charset="utf-8"></script>
+    <script>
+      setTimeout(function(){
+        peterOut(document.getElementById('index2'));
+      }, 1000)
+      setTimeout(function(){
+        peterOut(document.getElementById('index1'));
+      }, 2500)
+    </script>
 
   </body>
 </html>

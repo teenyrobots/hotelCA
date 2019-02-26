@@ -11,6 +11,12 @@ $(document).ready(function(){
 
   //LOOKING SICK
   //soft flicker on
+  setTimeout(function(){
+    flickerOn(document.getElementById('index1'));
+  }, 750)
+  setTimeout(function(){
+    flickerOn(document.getElementById('index2'));
+  }, 2250)
 
 
   //button blink -- actually not going to do this, it would look cool but it not part of MVP

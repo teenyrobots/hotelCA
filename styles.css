@@ -193,7 +193,7 @@ header img {
 }
 
 .visited {
-  opacity: .7;
+  opacity: .9;
 }
 
 .visited .tileText {
@@ -267,5 +267,9 @@ footer a {
 
   .small .tileImg{
     height: 10em;
+  }
+
+  .logos img {
+    margin: 0 .25em;
   }
 }

@@ -13,7 +13,6 @@ $(document).ready(function(){
 
   $('.available').hover(
     function(){
-      console.log($(this).find(':nth-child(1)'));
       $(':nth-child(1)', this).css('backgroundColor', '#34A582');
     },
     function(){
@@ -29,43 +28,30 @@ function tileState(x) {
 }
 
 
+function flickerOn(flick) {
+  let lit = 'assets/'+ flick.id+'.png';
+  let unlit = 'assets/'+ flick.id+'x.png';
+  console.log("i'm ready for my close up");
+  setTimeout(function() {
+    lightIt(flick, lit)
+  }, 100);
+  setTimeout(function() {
+    darkIt(flick, unlit);
+  }, 225);
+  setTimeout(function() {
+    lightIt(flick, lit)
+  }, 500);
+  setTimeout(function() {
+    lightIt(flick, lit)
+  }, 575);
+  setTimeout(function() {
+    darkIt(flick, unlit);
+  }, 600);
+  setTimeout(function() {
+    lightIt(flick, lit)
+  }, 700);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// open session storage
-// keep track of which tiles have been visisted
-  // show appropriate tiles
-  // display appropriate background image
-// reset sessions storage when user clicks final "home" link
-
-// //STORY PROGRESSION
-// function bgIncrement(){
-//
-//   if (sessionStorage.getItem("bgState")) {
-//     let currentBg = parseInt((sessionStorage.getItem("bgState")), 10);
-//     currentBg += 1;
-//     sessionStorage.setItem("bgState", currentBg);
-//     console.log(sessionStorage.getItem("bgState"));
-//   } else {
-//     let currentBg =  1;
-//     sessionStorage.setItem("bgState", currentBg);
-//     console.log(sessionStorage.getItem("bgState"));
-//   }
-//   // sessionStorage.setItem("bgState", currentBg+1);
-//   // console.console.log(sessionStorage.getItem("bgState"));
-// }
 
 
 //TEMPLATED BLINKING
