@@ -1,4 +1,5 @@
 //functions used across site
+
 $(document).ready(function(){
 
   //figures out what time it is for the comic pages
@@ -31,7 +32,6 @@ function tileState(x) {
 function flickerOn(flick) {
   let lit = 'assets/'+ flick.id+'.png';
   let unlit = 'assets/'+ flick.id+'x.png';
-  console.log("i'm ready for my close up");
   setTimeout(function() {
     lightIt(flick, lit)
   }, 100);

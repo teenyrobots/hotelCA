@@ -33,16 +33,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
   // setTimeout(function() {
   //   doABlink(document.getElementById('index1'));
   //   // console.log('yea i am a blinker')

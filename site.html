@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to the Hotel California</title>
   </head>
+  <input type="hidden" id="refreshed" value="no">
+  <script type="text/javascript">
+    window.onpageshow = function(event) {
+  if (event.persisted) {
+    window.location.reload()
+  }
+  };
+  </script>
   <body id='theBod'>
     <div class="page">
       <header class="roughBorder">

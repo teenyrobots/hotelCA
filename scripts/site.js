@@ -1,6 +1,10 @@
-// scripts for site.html
 
+
+
+// scripts for site.html
 $(document).ready(function(){
+
+  console.log("im ready!!");
 
   // manages tile style based on story state
   let story = [];
